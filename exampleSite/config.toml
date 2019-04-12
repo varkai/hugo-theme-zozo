@@ -1,0 +1,55 @@
+baseURL = "http://localhost:1313/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "ZoZo"              # 网站标题
+theme = "zozo"
+hasCJKLanguage = true          # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
+summaryLength = 100
+paginate = 4                   # 首页显示文章数量
+
+[author]                       # essential                     # 必需
+  name = "Zeuk"
+
+[[menu.main]]                  # config your menu 配置菜单
+  name = "首页"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "归档"
+  weight = 20
+  identifier = "archive"
+  url = "/posts/"
+[[menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "关于"
+  weight = 40
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  subTitle = "the site subtitle"                                     # 网站二级标题
+  footerSlogan = "我的精神家园"                                          # 网站页脚标语
+  keywords = ["Hugo", "theme","zozo"]                                  # 网站关键字
+  description = "Hugo theme zozo example site."                        # 网站描述
+
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
+[params.valine]
+  enable = false
+  appId = ""
+  appKey = ""
+  placeholder = " "
+  visitor = true
+
+[social]
+  github = " "
+  twitter = " "
+  facebook = " "
+  weibo = " "
+  instagram = " "

@@ -1,0 +1,23 @@
+<div class="header animated fadeInDown">
+  <div class="site_title_container">
+    <div class="site_title">
+      <h1>
+        <a href="{{ .Site.BaseURL }}">
+          <span>{{ .Site.Title }}</span>
+          <img src="{{ .Site.BaseURL }}images/logo.svg"/>
+        </a>
+      </h1>
+    </div>
+    <div class="description">
+      <p class="sub_title">{{ with .Site.Params.subTitle }}{{ . }}{{ else }}{{ end }}</p>
+      <div class="my_socials">
+        {{ range $key, $val := .Site.Social }}
+        {{ if ne $val ""}}
+        <a href="{{ $val }}" title="{{ $key }}" target="_blank"><i class="remixicon-{{ $key }}-fill"></i></a>
+        {{ end }}
+        {{ end }}
+        <a href="{{ .Site.RSSLink }}" type="application/rss+xml" title="rss" target="_blank"><i class="remixicon-rss-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

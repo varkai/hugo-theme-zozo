@@ -1,0 +1,17 @@
+prev_page:
+  other: "Prev"
+
+next_page:
+  other: "Next"
+
+home:
+  other: "Home"
+
+archive:
+  other: "Archive"
+
+tags:
+  other: "Tags"
+
+about:
+  other: "About"

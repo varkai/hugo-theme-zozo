@@ -1,0 +1,47 @@
+{{ $pages := where .Pages "Type" "not in" (slice "about") }}
+{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+{{ range $paginator.Pages }}
+<div class="post animated fadeInDown">
+  <div class="post_title">
+    <h2><a href='{{ .Permalink }}'>{{ .Title }}</a></h2>
+  </div>
+  <div class="list">
+    <div class="post_content">
+      <p>{{ .Summary }}......</p>
+    </div>
+  </div>
+  <div class="post_footer">
+    <div class="meta">
+      <div class="info">
+        <span class="field">
+          <i class="remixicon-map-pin-time-line"></i>
+          <span class="date">{{ .Date.Format "2006.01.02" }}</span>
+        </span>
+        {{ with .Params.tags }}
+        <span class="field tags">
+          <i class="remixicon-stack-line"></i>
+          {{ range . }}
+          <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">{{ . }}</a>
+          {{ end }}
+        </span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<div class="pagination">
+  {{ if or ($paginator.HasPrev) ($paginator.HasNext) }}
+  {{ if $paginator.HasPrev }}
+  <a href="{{$paginator.Prev.URL}}" class="pre">
+    {{ i18n "prev_page" }}
+  </a>
+  {{ end }}
+  {{ if $paginator.HasNext }}
+  <a href="{{$paginator.Next.URL}}" class="next">
+    {{ i18n "next_page" }}
+  </a>
+  {{ end }}
+  {{ end }}
+</div>

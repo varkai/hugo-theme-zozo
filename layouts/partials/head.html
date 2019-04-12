@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html {{ with .Site.LanguageCode }}lang="{{ . }}" {{ end }}>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <!-- author & description & keywords  -->
+  <meta name="author"
+        content="{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}"/>
+
+  {{ if .Description }}
+  <meta name="description" content="{{ .Description | safeHTML }}"/>
+  {{ else if .IsPage }}
+  <meta name="description" content="{{ .Summary | plainify }}"/>
+  {{ else if .Site.Params.description }}
+  <meta name="description" content="{{ .Site.Params.description | safeHTML }}"/>
+  {{ end }}
+
+  {{ if .Keywords }}
+  {{ $length := len .Keywords | add -1 }}
+  <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}"/>
+  {{ else if .Site.Params.keywords }}
+  {{ $length := len .Site.Params.keywords | add -1 }}
+  <meta name="keywords" content="{{ range $index, $element := .Site.Params.keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}"/>
+  {{ end }}
+
+  <!-- Permalink & RSSlink -->
+  <link rel="canonical" href="{{ .Permalink }}"/>
+
+  {{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+  {{ end -}}
+
+  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico"/>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.min.css"/>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/remixicon.css"/>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/zozo.css"/>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css"/>
+
+  {{ range .Site.Params.customCSS }}
+  <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}"/>
+  {{ end }}
+</head>

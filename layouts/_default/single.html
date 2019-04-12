@@ -1,0 +1,39 @@
+{{ partial "head.html" . }}
+<body>
+<div class="main animated">
+  {{ partial "header.html" . }}
+  <div class="content">
+    <div class="post_page">
+      <div class="post animated fadeInDown">
+        <div class="post_title post_detail_title">
+          <h2><a href='{{ .Permalink }}'>{{ .Title }}</a></h2>
+          <span class="date">{{ .Date.Format "2006.01.02" }}</span>
+        </div>
+        <div class="post_content markdown">{{ .Content }}</div>
+        <div class="post_footer">
+          {{ with .Params.tags }}
+          <div class="meta">
+            <div class="info">
+              <span class="field tags">
+                <i class="remixicon-stack-line"></i>
+                {{ range . }}
+                <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">{{ . }}</a>
+                {{ end }}
+              </span>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <!-- Valine 评论系统 -->
+      {{ if .Site.Params.valine.enable }}
+      {{ partial "comments.html" . }}
+      {{ end }}
+    </div>
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
+</div>
+{{ partial "footer.html" . }}
+{{ partial "js.html" . }}
+</body>
+</html>

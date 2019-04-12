@@ -1,0 +1,26 @@
+<footer class="footer">
+  <div class="nav_container">
+    <div class="nav">
+      <div class="site_nav_wrap">
+        <ul class="site_nav">
+          {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL | safeURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="powered_by">
+    <a href="https://kaigc.com">Designed by Zeuk,</a>
+    <a href="http://www.gohugo.io/">Proudly published with Hugo</a>
+  </div>
+
+  <div class="footer_slogan">
+    <span>{{ .Site.Params.footerSlogan }}</span>
+  </div>
+</footer>
+
+

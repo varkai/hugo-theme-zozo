@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+<body>
+<div class="main animated">
+  {{ partial "header.html" . }}
+  <div class="content">
+    <div class="page_tags">
+      <ul>
+        {{ $data := .Data }}
+        {{ range $key, $value := .Data.Terms.ByCount }}
+        {{ if ($value.Name) }}
+        <li>
+          <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}">
+            {{ $value.Name | upper }} <span class="terms_count">{{ $value.Count }}</span>
+          </a>
+
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+    <div class="pagination"></div>
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
+</div>
+{{ partial "footer.html" . }}
+{{ partial "js.html" . }}
+</body>
+</html>
