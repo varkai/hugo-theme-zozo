@@ -19,7 +19,7 @@
 $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 ```
 
-本主题提供了一个示例配置文件是 `exampleSite` 目录里的 `config.toml` 文件。
+本主题提供了一个示例配置文件是 [`exampleSite`](./exampleSite) 目录里的 [`config.toml`](./exampleSite/config.toml) 文件。
 
 配置文件中对大部分配置都有详细的注释说明，复制该文件到站点目录下，根据自己的情况修改即可。
 
@@ -31,11 +31,11 @@ $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 
 ## 关于页面
 
-使用关于页面，首先要在你的站点目录的 `content` 目录下创建一个 `about` 目录，然后再创建一个 `index.md` 文件，并在文件的 `frontmatter` 中添加  `hidden: true`, 最后编写该文件即可。
+使用关于页面，首先要在你的站点目录的 [`content`](./exampleSite/content/) 目录下创建一个 [`about`](./exampleSite/content/about/) 目录，然后再创建一个 [`index.md`](./exampleSite/content/about/index.md) 文件，并在文件的 `frontmatter` 中添加  `hidden: true`, 最后编写该文件即可。
 
 ## Logo
 
-你需要将 `images` 目录下的 `logo.svg`、`favicon.ico` 都替换为你自己的图像。
+你需要将 [`images`](./static/images/) 目录下的 `logo.svg`、`favicon.ico` 都替换为你自己的图像。
 
 ## 隐藏页面
 
@@ -47,14 +47,14 @@ $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 
 ## Valine 评论
 
-本主题提供了 Valine 评论系统，默认为关闭状态，如需使用，需要在 `config.toml` 中进行设置。
+本主题提供了 Valine 评论系统，默认为关闭状态，如需使用，需要在 [`config.toml`](./exampleSite/config.toml) 中进行设置。
 
 设置 `[params.valine]` 下的 `enable = true` 来开启评论系统，并将 `appId` 和 `appKey` 设置为你自己的。
 
 
 ## 社交链接
 
-本主题的社交链接是字体图标的样式，并放置在了页面头部。你可以通过在 `config.toml` 的 `[social]` 模块中修改添加你的社交链接。
+本主题的社交链接是字体图标的样式，并放置在了页面头部。你可以通过在 [`config.toml`](./exampleSite/config.toml) 的 `[social]` 模块中修改添加你的社交链接。
 
 ## 部署主题
 
