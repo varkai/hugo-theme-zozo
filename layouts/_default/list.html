@@ -10,7 +10,7 @@
         {{ range .Pages }}
         <div class="listing_item">
           <div class="listing_post">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             <div class="post_time"><span class="date">{{ .Date.Format "01-02" }}</span></div>
           </div>
         </div>

@@ -3,7 +3,7 @@
 {{ range $paginator.Pages }}
 <div class="post animated fadeInDown">
   <div class="post_title">
-    <h2><a href='{{ .Permalink }}'>{{ .Title }}</a></h2>
+    <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
   </div>
   <div class="list">
     <div class="post_content">
@@ -21,7 +21,7 @@
         <span class="field tags">
           <i class="remixicon-stack-line"></i>
           {{ range . }}
-          <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">{{ . }}</a>
+          <a href="{{ "tags" | relURL }}/{{ . | urlize }}/">{{ . }}</a>
           {{ end }}
         </span>
         {{ end }}

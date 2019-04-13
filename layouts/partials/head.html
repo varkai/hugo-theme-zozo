@@ -19,28 +19,29 @@
 
   {{ if .Keywords }}
   {{ $length := len .Keywords | add -1 }}
-  <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}"/>
+  <meta name="keywords" content="{{ range $index, $element := .Keywords }}{{ $element | safeHTML }}{{ if ne $index $length }}, {{ end }}{{ end }}"/>
   {{ else if .Site.Params.keywords }}
   {{ $length := len .Site.Params.keywords | add -1 }}
-  <meta name="keywords" content="{{ range $index, $element := .Site.Params.keywords }}{{ $element | safeHTML }}{{if ne $index $length }}, {{ end }}{{ end }}"/>
+  <meta name="keywords" content="{{ range $index, $element := .Site.Params.keywords }}{{ $element | safeHTML }}{{ if ne $index $length }}, {{ end }}{{ end }}"/>
   {{ end }}
 
   <!-- Permalink & RSSlink -->
   <link rel="canonical" href="{{ .Permalink }}"/>
 
-  {{ range .AlternativeOutputFormats -}}
+  {{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-  {{ end -}}
+  {{ end }}
 
   <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 
-  <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico"/>
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.min.css"/>
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/remixicon.css"/>
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/zozo.css"/>
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css"/>
+  <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}"/>
+  <link rel="stylesheet" href="{{ "/css/animate.min.css" | relURL }}"/>
+  <link rel="stylesheet" href="{{ "/css/remixicon.css" | relURL }}"/>
+  <link rel="stylesheet" href="{{ "/css/zozo.css" |relURL }}"/>
+  <link rel="stylesheet" href="{{ "/css/highlight.css" | relURL }}"/>
 
+  <!-- custom css -->
   {{ range .Site.Params.customCSS }}
-  <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}"/>
+  <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
   {{ end }}
 </head>

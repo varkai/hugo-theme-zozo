@@ -6,7 +6,7 @@
     <div class="post_page">
       <div class="post animated fadeInDown">
         <div class="post_title post_detail_title">
-          <h2><a href='{{ .Permalink }}'>{{ .Title }}</a></h2>
+          <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
           <span class="date">{{ .Date.Format "2006.01.02" }}</span>
         </div>
         <div class="post_content markdown">{{ .Content }}</div>
@@ -17,7 +17,7 @@
               <span class="field tags">
                 <i class="remixicon-stack-line"></i>
                 {{ range . }}
-                <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">{{ . }}</a>
+                <a href="{{ "tags" | relURL }}/{{ . | urlize }}/">{{ . }}</a>
                 {{ end }}
               </span>
             </div>
