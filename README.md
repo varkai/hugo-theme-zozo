@@ -5,7 +5,7 @@
 
 > 该主题移植自 [Aragaki](https://github.com/PCDotFan/Aragaki)，结构样式参考自 [菩提树下](https://blog.caicai.me/)。
 
-[在线预览：Demo](https://zeuk.me/example-site/)
+**在线预览**：[Demo](https://demo.zeuk.me)
 
 ## 截图
 
