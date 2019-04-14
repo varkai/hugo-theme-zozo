@@ -1,3 +1,13 @@
+<div class="nav_container">
+  <ul class="site_nav">
+    <li><span class="menu_icon"><i class="remixicon-terminal-fill"></i></span></li>
+    {{ range .Site.Menus.main }}
+    <li>
+      <a href="{{ .URL | safeURL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
 <div class="header animated fadeInDown">
   <div class="site_title_container">
     <div class="site_title">

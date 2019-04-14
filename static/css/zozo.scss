@@ -64,7 +64,6 @@ h6 {
 
 .content {
   width: 720px;
-  padding: 0 20px;
   height: auto;
   margin: 0 auto;
 }
@@ -74,9 +73,16 @@ h6 {
   margin: 0 auto;
 }
 
+.nav_container {
+  width: 720px;
+  height: 3rem;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
 .header {
   width: 720px;
-  padding: 100px 0 140px 0;
+  padding: 50px 0 140px 0;
   margin: 0 auto;
   -webkit-background-size: cover;
   background-size: cover;
@@ -276,7 +282,7 @@ h6 {
   max-width: 780px;
   text-align: center;
   font-size: 12px;
-  padding: 60px 0px;
+  padding: 40px 0;
   margin: 0 auto;
 
   a {
@@ -285,26 +291,6 @@ h6 {
 
     &:hover {
       color: #1f1f1f;
-    }
-  }
-
-  .nav_container {
-    .site_nav_wrap {
-      text-align: center;
-    }
-
-    .site_nav {
-      display: inline-block;
-      float: none;
-
-      a {
-        font-size: 13px;
-        color: #666666;
-
-        &.current {
-          color: #222222;
-        }
-      }
     }
   }
 
@@ -331,21 +317,11 @@ h6 {
   }
 }
 
-.nav {
-  width: 100%;
-  text-align: right;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-
-  a {
-    text-decoration: none;
-  }
-}
-
 .site_nav {
   list-style: none;
   margin: 0;
   padding: 0;
+  float: right;
 
   ul {
     width: 12em;
@@ -358,28 +334,27 @@ h6 {
 
   li {
     float: left;
+
+    span.menu_icon {
+      margin-top: 2px;
+
+      i {
+        font-size: 16px;
+      }
+    }
   }
 
-  ul li,
-  &.sm-rtl ul li,
-  &.sm-vertical li {
+  ul li {
     float: none;
   }
 
-  a {
+  a, span.menu_icon {
     display: block;
     white-space: nowrap;
-    padding: 12px;
+    padding: 12px 0 12px 20px;
+    font-size: 14px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .nav {
-    display: block;
-  }
-  .footer .nav_container .site_nav_wrap {
-    /*text-align: left;*/
-  }
 }
 
 /*for archive*/
@@ -409,6 +384,11 @@ h6 {
 
     .listing_post {
       padding-bottom: 5px;
+
+      a {
+        display: inline-block;
+        width: 85%;
+      }
 
       .post_time {
         float: right;
@@ -629,6 +609,7 @@ a.back_to_top {
   .main {
     width: 1000px;
   }
+  .nav_container,
   .header,
   .content {
     width: 820px;
@@ -640,6 +621,7 @@ a.back_to_top {
     width: 95%;
     margin-top: 20px;
   }
+  .nav_container,
   .header,
   .content {
     width: 90%;
