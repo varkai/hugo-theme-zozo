@@ -3,7 +3,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/imzeuk/hugo-theme-zozo.svg?style=social)](https://github.com/imzeuk/hugo-theme-zozo/graphs/contributors)
 [![GitHub](https://img.shields.io/github/license/imzeuk/hugo-theme-zozo.svg?style=social)](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE)
 
-> 该主题移植自 [Aragaki](https://github.com/PCDotFan/Aragaki)，结构样式参考自 [菩提树下](https://blog.caicai.me/)。
+> 该主题移植自 [Aragaki](https://github.com/PCDotFan/Aragaki)，结构样式参考自 [菩提树下](https://blog.caicai.me/)，部分功能参考自 [Even](https://github.com/olOwOlo/hugo-theme-even)
 
 **在线预览**：[Demo](https://demo.zeuk.me)
 
@@ -74,3 +74,4 @@ Released under the [MIT](https://github.com/imzeuk/hugo-theme-zozo/blob/master/L
 
 - [Aragaki](https://github.com/PCDotFan/Aragaki)
 - [菩提树下](https://blog.caicai.me/)
+- [olOwOlo](https://olowolo.com/)
