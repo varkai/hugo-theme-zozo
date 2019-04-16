@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://example.com"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 title = "无尽光芒"              # 网站标题
