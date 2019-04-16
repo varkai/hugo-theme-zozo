@@ -9,7 +9,7 @@
 
 ## 截图
 
-![zozo](./static/images/screenshot.png)
+![zozo](./images/showcase.png)
 
 ## 安装
 
