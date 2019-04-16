@@ -20,6 +20,8 @@ slug: "Theme Preview"
 ###### H6
 ```
 
+<!--more-->
+
 # H1
 
 ## H2

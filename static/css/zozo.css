@@ -415,7 +415,7 @@ h6 {
   float: right;
 }
 
-.markdown {
+.post_content {
   color: #555555;
   line-height: 1.8em;
   word-wrap: break-word;
@@ -423,48 +423,48 @@ h6 {
   overflow-wrap: break-word;
 }
 
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown dl {
+.post_content p,
+.post_content ul,
+.post_content ol,
+.post_content dl {
   margin: 0.8em 0;
 }
 
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
+.post_content h1,
+.post_content h2,
+.post_content h3,
+.post_content h4,
+.post_content h5,
+.post_content h6 {
   margin: 2.5em 0 1.3em 0;
   color: #000000;
 }
 
-.markdown h1 {
+.post_content h1 {
   font-size: 1.35em;
 }
 
-.markdown h2 {
+.post_content h2 {
   font-size: 1.25em;
 }
 
-.markdown h3 {
+.post_content h3 {
   font-size: 1.15em;
 }
 
-.markdown h4 {
+.post_content h4 {
   font-size: 1.1em;
 }
 
-.markdown pre,
-.markdown code {
+.post_content pre,
+.post_content code {
   font-family: "Roboto Mono", Menlo, Monaco, courier, monospace;
   font-size: 0.8em;
   background: #f8f8f8;
   border: none;
 }
 
-.markdown pre {
+.post_content pre {
   margin-top: 1.2em;
   margin-bottom: 2.2em;
   padding: 15px 20px;
@@ -474,35 +474,35 @@ h6 {
   word-wrap: break-word;
 }
 
-.markdown code {
+.post_content code {
   color: #666666;
   padding: 4px 5px;
   border-radius: 2px;
   white-space: nowrap;
 }
 
-.markdown pre code {
+.post_content pre code {
   padding: 0;
   color: #555555;
 }
 
-.markdown blockquote p {
+.post_content blockquote p {
   white-space: pre-line;
 }
 
-.markdown pre::-webkit-scrollbar {
+.post_content pre::-webkit-scrollbar {
   height: 10px;
 }
 
-.markdown pre::-webkit-scrollbar-button {
+.post_content pre::-webkit-scrollbar-button {
   display: none;
 }
 
-.markdown pre::-webkit-scrollbar-track {
+.post_content pre::-webkit-scrollbar-track {
   background: white;
 }
 
-.markdown pre::-webkit-scrollbar-thumb {
+.post_content pre::-webkit-scrollbar-thumb {
   min-height: 1rem;
   background-color: #cccccc;
   background-clip: padding-box;
@@ -510,12 +510,12 @@ h6 {
   border-radius: 5px;
 }
 
-.markdown pre::-webkit-scrollbar-thumb:active {
+.post_content pre::-webkit-scrollbar-thumb:active {
   background-color: #999999;
   border-width: 2px;
 }
 
-.markdown blockquote {
+.post_content blockquote {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 2.5em 0;
@@ -525,7 +525,7 @@ h6 {
   border-left: none;
 }
 
-.markdown blockquote:before {
+.post_content blockquote:before {
   content: "“";
   display: block;
   font-family: times, sans-serif;
@@ -538,19 +538,19 @@ h6 {
   position: absolute;
 }
 
-.markdown strong,
-.markdown b,
-.markdown em {
+.post_content strong,
+.post_content b,
+.post_content em {
   padding: 1px 2px;
   background-color: #fcfcf0;
   font-weight: normal;
 }
 
-.markdown .fancybox {
+.post_content .fancybox {
   text-align: center;
 }
 
-.markdown img {
+.post_content img {
   max-width: 90%;
   height: auto;
 }

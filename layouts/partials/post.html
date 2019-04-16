@@ -5,11 +5,13 @@
   <div class="post_title">
     <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
   </div>
+  {{ if .Site.Params.summaryDisplay }}
   <div class="list">
     <div class="post_content">
       <p>{{ .Summary }}......</p>
     </div>
   </div>
+  {{ end }}
   <div class="post_footer">
     <div class="meta">
       <div class="info">

@@ -44,6 +44,8 @@ enableEmoji = true
   # mathjax
   mathjax = true                                                       # 是否使用mathjax（数学公式）
 
+  summaryDisplay = true                                                # 是否显示文章摘要
+
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
