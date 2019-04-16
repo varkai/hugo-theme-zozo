@@ -11,6 +11,9 @@ enableEmoji = true
 [author]                       # essential                     # 必需
   name = "Zeuk"
 
+[blackfriday]
+  smartypants = false
+
 [[menu.main]]                  # config your menu 配置菜单
   name = "首页"
   weight = 10
@@ -33,10 +36,13 @@ enableEmoji = true
   url = "/about/"
 
 [params]
-  subTitle = "the site subtitle"                                     # 网站二级标题
+  subTitle = "the site subtitle"                                       # 网站二级标题
   footerSlogan = "我的精神家园"                                          # 网站页脚标语
   keywords = ["Hugo", "theme","zozo"]                                  # 网站关键字
   description = "Hugo theme zozo example site."                        # 网站描述
+
+  # mathjax
+  mathjax = true                                                       # 是否使用mathjax（数学公式）
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn

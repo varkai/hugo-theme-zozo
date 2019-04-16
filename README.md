@@ -45,6 +45,12 @@ $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 
 关于页面就是这么实现的。
 
+## Math 公式
+
+本主题支持 MathJax 数学公式，默认为关闭状态，如需使用，需要在 [`config.toml`](./exampleSite/config.toml) 中进行设置。
+
+设置 `[params]` 下的 `mathjax = true` 来支持数学公式。
+
 ## Valine 评论
 
 本主题提供了 Valine 评论系统，默认为关闭状态，如需使用，需要在 [`config.toml`](./exampleSite/config.toml) 中进行设置。

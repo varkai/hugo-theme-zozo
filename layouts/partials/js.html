@@ -5,3 +5,7 @@
 <script src="{{ "/js/fancybox.min.js" | relURL }}"></script>
 
 <script>hljs.initHighlightingOnLoad()</script>
+
+{{ if .Site.Params.mathjax }}
+  {{ partial "mathjax.html" . }}
+{{ end }}
