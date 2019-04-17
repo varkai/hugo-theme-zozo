@@ -116,7 +116,7 @@ h6 {
     }
 
     .description {
-      font-size: 14px;
+      font-size: 0.9rem;
       color: #565654;
       float: right;
 
@@ -349,8 +349,8 @@ h6 {
   a, span.menu_icon {
     display: block;
     white-space: nowrap;
-    padding: 12px 0 12px 20px;
-    font-size: 14px;
+    padding: 10px;
+    font-size: 0.9rem;
   }
 
 }
@@ -425,14 +425,12 @@ h6 {
   }
 }
 
-.post_content {
-  color: #555555;
+.markdown {
   line-height: 1.8em;
   word-wrap: break-word;
   word-break: normal;
   overflow-wrap: break-word;
 
-  p,
   ul,
   ol,
   dl {
@@ -468,7 +466,7 @@ h6 {
   pre,
   code {
     font-family: "Roboto Mono", Menlo, Monaco, courier, monospace;
-    font-size: 0.8em;
+    font-size: 0.9em;
     background: #f8f8f8;
     border: none;
   }
@@ -632,10 +630,9 @@ a.back_to_top {
   }
   .post {
     margin-top: 40px;
-    font-size: 14px;
 
     .post_title a {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
   }
   .post_footer {

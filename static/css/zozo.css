@@ -111,7 +111,7 @@ h6 {
 }
 
 .header .site_title_container .description {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: #565654;
   float: right;
 }
@@ -342,8 +342,8 @@ h6 {
 .site_nav a, .site_nav span.menu_icon {
   display: block;
   white-space: nowrap;
-  padding: 12px 0 12px 20px;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 0.9rem;
 }
 
 /*for archive*/
@@ -415,56 +415,54 @@ h6 {
   float: right;
 }
 
-.post_content {
-  color: #555555;
+.markdown {
   line-height: 1.8em;
   word-wrap: break-word;
   word-break: normal;
   overflow-wrap: break-word;
 }
 
-.post_content p,
-.post_content ul,
-.post_content ol,
-.post_content dl {
+.markdown ul,
+.markdown ol,
+.markdown dl {
   margin: 0.8em 0;
 }
 
-.post_content h1,
-.post_content h2,
-.post_content h3,
-.post_content h4,
-.post_content h5,
-.post_content h6 {
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
   margin: 2.5em 0 1.3em 0;
   color: #000000;
 }
 
-.post_content h1 {
+.markdown h1 {
   font-size: 1.35em;
 }
 
-.post_content h2 {
+.markdown h2 {
   font-size: 1.25em;
 }
 
-.post_content h3 {
+.markdown h3 {
   font-size: 1.15em;
 }
 
-.post_content h4 {
+.markdown h4 {
   font-size: 1.1em;
 }
 
-.post_content pre,
-.post_content code {
+.markdown pre,
+.markdown code {
   font-family: "Roboto Mono", Menlo, Monaco, courier, monospace;
-  font-size: 0.8em;
+  font-size: 0.9em;
   background: #f8f8f8;
   border: none;
 }
 
-.post_content pre {
+.markdown pre {
   margin-top: 1.2em;
   margin-bottom: 2.2em;
   padding: 15px 20px;
@@ -474,35 +472,35 @@ h6 {
   word-wrap: break-word;
 }
 
-.post_content code {
+.markdown code {
   color: #666666;
   padding: 4px 5px;
   border-radius: 2px;
   white-space: nowrap;
 }
 
-.post_content pre code {
+.markdown pre code {
   padding: 0;
   color: #555555;
 }
 
-.post_content blockquote p {
+.markdown blockquote p {
   white-space: pre-line;
 }
 
-.post_content pre::-webkit-scrollbar {
+.markdown pre::-webkit-scrollbar {
   height: 10px;
 }
 
-.post_content pre::-webkit-scrollbar-button {
+.markdown pre::-webkit-scrollbar-button {
   display: none;
 }
 
-.post_content pre::-webkit-scrollbar-track {
+.markdown pre::-webkit-scrollbar-track {
   background: white;
 }
 
-.post_content pre::-webkit-scrollbar-thumb {
+.markdown pre::-webkit-scrollbar-thumb {
   min-height: 1rem;
   background-color: #cccccc;
   background-clip: padding-box;
@@ -510,12 +508,12 @@ h6 {
   border-radius: 5px;
 }
 
-.post_content pre::-webkit-scrollbar-thumb:active {
+.markdown pre::-webkit-scrollbar-thumb:active {
   background-color: #999999;
   border-width: 2px;
 }
 
-.post_content blockquote {
+.markdown blockquote {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 2.5em 0;
@@ -525,7 +523,7 @@ h6 {
   border-left: none;
 }
 
-.post_content blockquote:before {
+.markdown blockquote:before {
   content: "“";
   display: block;
   font-family: times, sans-serif;
@@ -538,19 +536,19 @@ h6 {
   position: absolute;
 }
 
-.post_content strong,
-.post_content b,
-.post_content em {
+.markdown strong,
+.markdown b,
+.markdown em {
   padding: 1px 2px;
   background-color: #fcfcf0;
   font-weight: normal;
 }
 
-.post_content .fancybox {
+.markdown .fancybox {
   text-align: center;
 }
 
-.post_content img {
+.markdown img {
   max-width: 90%;
   height: auto;
 }
@@ -622,10 +620,9 @@ a.back_to_top:hover span {
   }
   .post {
     margin-top: 40px;
-    font-size: 14px;
   }
   .post .post_title a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .post_footer {
     padding-bottom: 30px;
