@@ -11,9 +11,8 @@
         {{ if ($value.Name) }}
         <li>
           <a href="{{ $data.Plural | relURL }}/{{ $value.Name | urlize }}">
-            {{ .Page.Title }} <span class="terms_count">{{ $value.Count }}</span>
+            {{ $value.Name }} <span class="terms_count">{{ $value.Count }}</span>
           </a>
-
         </li>
         {{ end }}
         {{ end }}
