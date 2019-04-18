@@ -38,11 +38,11 @@ There is an example site with config file and markdown files in `exampleSite` di
 
 ## About Page
 
-Use the about page to introduce yourself to your visitors. You can customize the content as you like in the /content/about/index.md.
+Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/index.md`.
 
 ## Logo
 
-In order to customize the logo and favicon, you need to place all the following files in the static folder at the root of your site, which will overwrite those files in the themes/zozo/static/images/ folder.
+In order to customize the logo and favicon, you need to place all the following files in the static folder at the root of your site, which will overwrite those files in the `themes/zozo/static/images/` folder.
 
 ## Hide Pages
 
