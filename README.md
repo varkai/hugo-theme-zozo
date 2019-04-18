@@ -3,80 +3,84 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/imzeuk/hugo-theme-zozo.svg?style=social)](https://github.com/imzeuk/hugo-theme-zozo/graphs/contributors)
 [![GitHub](https://img.shields.io/github/license/imzeuk/hugo-theme-zozo.svg?style=social)](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE)
 
-> 该主题移植自 [Aragaki](https://github.com/PCDotFan/Aragaki)，结构样式参考自 [菩提树下](https://blog.caicai.me/)，部分功能参考自 [Even](https://github.com/olOwOlo/hugo-theme-even)
+A simple and beautiful theme for Hugo
 
-**在线预览**：[Demo](https://demo.zeuk.me)
+> It's a port of [Aragaki](https://github.com/PCDotFan/Aragaki), The style is reference from [菩提树下](https://blog.caicai.me/), Some functions are referenced from [Even](https://github.com/olOwOlo/hugo-theme-even)
 
-## 截图
+**Features**
+
++ **Responsive**
++ **Syntax highlighting with highlightjs**
++ **Math with mathjax** 
++ **Social links(Customize)**
++ **Tags page**
++ **Archive page**
++ **[Valine](https://valine.js.org/en/index.html) comment-system**
++ **Fancybox**
+
+[Demo](https://demo.zeuk.me) | [中文说明](./README-zh.md)
+
+## Sceenshots
 
 ![zozo](./images/showcase.png)
 
-## 安装
-
-首先进入 hugo 的站点目录运行下面的命令：
+## Installation
 
 ```bash
 $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 ```
 
-本主题提供了一个示例配置文件是 [`exampleSite`](./exampleSite) 目录里的 [`config.toml`](./exampleSite/config.toml) 文件。
+**Important**: Take a look inside the [`exampleSite`](./exampleSite) folder of this theme. You'll find a file called [`config.toml`](./exampleSite/config.toml). To use it, copy the [`config.toml`](./exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change it.
 
-配置文件中对大部分配置都有详细的注释说明，复制该文件到站点目录下，根据自己的情况修改即可。
+## ExampleSite
 
-更多安装信息查看 Hugo 官方文档 [setup guide](https://gohugo.io/overview/installing/)。
+There is an example site with config file and markdown files in `exampleSite` directory.
 
-## 示例站点
+## About Page
 
-`exampleSite` 是本主题的一个示例站点，里面有配置文件、关于页面的一些示例。
-
-## 关于页面
-
-使用关于页面，首先要在你的站点目录的 [`content`](./exampleSite/content/) 目录下创建一个 [`about`](./exampleSite/content/about/) 目录，然后再创建一个 [`index.md`](./exampleSite/content/about/index.md) 文件，并在文件的 `frontmatter` 中添加  `hidden: true`, 最后编写该文件即可。
+Use the about page to introduce yourself to your visitors. You can customize the content as you like in the /content/about/index.md.
 
 ## Logo
 
-你需要将 [`images`](./static/images/) 目录下的 `logo.svg`、`favicon.ico` 都替换为你自己的图像。
+In order to customize the logo and favicon, you need to place all the following files in the static folder at the root of your site, which will overwrite those files in the themes/zozo/static/images/ folder.
 
-## 隐藏页面
+## Hide Pages
 
-如果你不想让一个页面出现在文章列表中，只需要在 markdown 文件的 `frontmatter` 中添加 `hidden: true` 即可。
+Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu.
 
-然后你可以在其他任何地方通过链接来引用该页面，如在菜单中放置一个链接。
+## MathJax
 
-关于页面就是这么实现的。
+This theme supports MathJax, which are turned off by default. If you want to use them, you need to set them in `config.toml`.
 
-## Math 公式
+Set `mathjax = true` under the `[params]` to support the MathJax.
 
-本主题支持 MathJax 数学公式，默认为关闭状态，如需使用，需要在 [`config.toml`](./exampleSite/config.toml) 中进行设置。
+## Valine Comment System
 
-设置 `[params]` 下的 `mathjax = true` 来支持数学公式。
+This theme provides valine comment system, the default is closed, if you want to use, need to set in `config. toml`.
 
-## Valine 评论
+Set the `enable = true` under `[params.valine]` to open valine, and will be `appId` and `appKey` set for yourself.
 
-本主题提供了 Valine 评论系统，默认为关闭状态，如需使用，需要在 [`config.toml`](./exampleSite/config.toml) 中进行设置。
+## Social Link Icons
 
-设置 `[params.valine]` 下的 `enable = true` 来开启评论系统，并将 `appId` 和 `appKey` 设置为你自己的。
+You can add a social link panel in the header by adding entries to the social block in the `config.toml`.
 
+[Remix icon](https://remixicon.com/) is used in this theme.
 
-## 社交链接
+## Nearly Finished
 
-本主题的社交链接是字体图标的样式，并放置在了页面头部。你可以通过在 [`config.toml`](./exampleSite/config.toml) 的 `[social]` 模块中修改添加你的社交链接。
-
-## 部署主题
-
-配置完成之后，就可以使用下面的命令来启动 hugo 服务编译 markdown 文件生成静态站点：
+In order to see your site in action, run Hugo's built-in local server.
 
 ```bash
 $ hugo server
 ```
 
-然后在浏览器地址栏输入 [localhost:1313](http://localhost:1313) 来访问站点。
+Now enter `localhost:1313` in the address bar of your browser.
 
 ## License
 
 Released under the [MIT](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE) License.
 
-## 致谢
+## Acknowledgements
 
 - [Aragaki](https://github.com/PCDotFan/Aragaki)
 - [菩提树下](https://blog.caicai.me/)
