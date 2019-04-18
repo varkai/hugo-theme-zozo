@@ -25,6 +25,21 @@ $(document).ready((function (_this) {
   }
 })(this))
 
+// nav-toggle
+$(document).ready((function (_this) {
+  return function () {
+    let nav,icon
+    icon = $('#menu_icon')
+    nav = $('#site_nav')
+    if ($(document).width() < 768) {
+      nav.css('display', 'none')
+    }
+    icon.click(function () {
+      nav.slideToggle(250)
+    })
+  }
+})(this))
+
 // fancybox
 $(document).ready((function (_this) {
   return function() {
