@@ -23,7 +23,7 @@
         <span class="field tags">
           <i class="remixicon-stack-line"></i>
           {{ range . }}
-          <a href="{{ "tags" | relURL }}/{{ . | urlize }}/">{{ . }}</a>
+          <a href="{{ "tags" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
           {{ end }}
         </span>
         {{ end }}

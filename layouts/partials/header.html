@@ -2,9 +2,9 @@
   <div class="site_title_container">
     <div class="site_title">
       <h1>
-        <a href="{{ "/" | relURL }}">
+        <a href="{{ "/" | absURL }}">
           <span>{{ .Site.Title }}</span>
-          <img src="{{ "/images/logo.svg" | relURL }}"/>
+          <img src="{{ "/images/logo.svg" | absURL }}"/>
         </a>
       </h1>
     </div>
