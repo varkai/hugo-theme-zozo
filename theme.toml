@@ -8,7 +8,7 @@ description = "A simple and beautiful theme for Hugo"
 homepage = "https://github.com/imzeuk/hugo-theme-zozo"
 tags = ["blog", "beautiful", "simple", "valine", "rss", "syntax highlighting", "tags"]
 features = ["blog", "beautiful", "simple", "valine", "rss", "syntax highlighting", "tags"]
-min_version = "0.53"
+min_version = "0.55"
 
 [author]
   name = "Zeuk"
