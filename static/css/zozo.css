@@ -587,6 +587,7 @@ a.back_to_top:hover span {
     z-index: 999;
   }
   .nav_container .site_nav {
+    display: none;
     position: fixed;
     right: 0;
     top: 60px;

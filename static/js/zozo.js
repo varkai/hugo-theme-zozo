@@ -31,9 +31,6 @@ $(document).ready((function (_this) {
     let nav,icon
     icon = $('#menu_icon')
     nav = $('#site_nav')
-    if ($(document).width() < 768) {
-      nav.css('display', 'none')
-    }
     icon.click(function () {
       nav.slideToggle(250)
     })
