@@ -6,6 +6,10 @@
 
 <script>hljs.initHighlightingOnLoad()</script>
 
-{{ if .Site.Params.mathjax }}
+{{ if .Site.Params.enableMathJax }}
   {{ partial "mathjax.html" . }}
+{{ end }}
+
+{{ if .Site.Params.enableGoogleAnalytics }}
+  {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}

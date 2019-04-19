@@ -5,7 +5,7 @@
   <div class="post_title">
     <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
   </div>
-  {{ if .Site.Params.summaryDisplay }}
+  {{ if .Site.Params.enableSummary }}
   <div class="list">
     <div class="post_content markdown">
       <p>{{ .Summary }}......</p>

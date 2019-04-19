@@ -17,6 +17,7 @@ A simple and beautiful theme for Hugo
 + **Archive page**
 + **[Valine](https://valine.js.org/en/index.html) comment-system**
 + **Fancybox**
++ **GoogleAnalytics**
 
 [Demo](https://demo.zeuk.me) | [中文说明](./README-zh.md)
 
