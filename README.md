@@ -15,7 +15,7 @@ A simple and beautiful theme for Hugo
 + **Social links(Customize)**
 + **Tags page**
 + **Archive page**
-+ **[Valine](https://valine.js.org/en/index.html) comment-system**
++ **Disqus and [Valine](https://valine.js.org/en/index.html) comment-system**
 + **Fancybox**
 + **GoogleAnalytics**
 

@@ -10,6 +10,6 @@
   {{ partial "mathjax.html" . }}
 {{ end }}
 
-{{ if .Site.Params.enableGoogleAnalytics }}
-  {{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
+{{ template "_internal/google_analytics_async.html" . }}
+
+{{ template "_internal/disqus.html" . }}

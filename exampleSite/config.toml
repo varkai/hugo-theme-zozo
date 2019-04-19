@@ -8,6 +8,7 @@ summaryLength = 100
 paginate = 4                         # shows the number of articles  # 首页显示文章数量
 enableEmoji = true
 googleAnalytics = ""                 # your google analytics id
+disqusShortname = ""                 # your discuss shortname
 
 [author]                             # essential                     # 必需
   name = "Zeuk"
@@ -46,8 +47,6 @@ googleAnalytics = ""                 # your google analytics id
   enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
 
   enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
-
-  enableGoogleAnalytics = true                                         # enable google analytics  # 谷歌统计
   
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
