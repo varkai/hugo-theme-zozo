@@ -1,7 +1,6 @@
 # Hugo Theme Zozo
 
-[![GitHub contributors](https://img.shields.io/github/contributors/imzeuk/hugo-theme-zozo.svg?style=social)](https://github.com/imzeuk/hugo-theme-zozo/graphs/contributors)
-[![GitHub](https://img.shields.io/github/license/imzeuk/hugo-theme-zozo.svg?style=social)](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/imzeuk/hugo-theme-zozo.svg?color=4664DA&style=flat-square)](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE)
 
 A simple and beautiful theme for Hugo
 
