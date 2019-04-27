@@ -1,5 +1,5 @@
-{{ $pages := where .Pages "Type" "not in" (slice "about") }}
-{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+{{ $pages := where .Pages "Params.hidden" "ne" true }}
+{{ $paginator := .Paginate (where $pages "Type" "posts") }}
 {{ range $paginator.Pages }}
 <div class="post animated fadeInDown">
   <div class="post_title">

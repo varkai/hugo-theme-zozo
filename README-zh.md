@@ -42,8 +42,6 @@ $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 
 然后你可以在其他任何地方通过链接来引用该页面，如在菜单中放置一个链接。
 
-关于页面就是这么实现的。
-
 ## Shortcodes
 
 主题提供了 `img` shortcode.
