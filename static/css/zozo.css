@@ -7,7 +7,7 @@ html {
 
 body {
   color: #333333;
-  font-family: 'source-han-sans-simplified-c', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'source-han-sans-simplified-c', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   width: 100%;
   background-color: #f7f7f7;
@@ -43,6 +43,10 @@ h4,
 h5,
 h6 {
   text-rendering: optimizeLegibility;
+}
+
+hr {
+  border: 1px solid #f3f3f3;
 }
 
 /*basic styles ends*/
@@ -454,7 +458,7 @@ h6 {
 .markdown code {
   font-family: 'Roboto Mono', Menlo, Monaco, courier, monospace;
   font-size: 0.9em;
-  background: #f8f8f8;
+  background: #f8f8f8 !important;
   border: none;
 }
 

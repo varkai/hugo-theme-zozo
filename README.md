@@ -48,6 +48,14 @@ In order to customize the logo and favicon, you need to place all the following 
 
 Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu.
 
+## Shortcodes
+
+This theme provides `img` shortcodes.
+
+```markdown
+{{< img src="path/to/xxx.png" title="xxx" >}}
+```
+
 ## MathJax
 
 This theme supports MathJax, which are turned off by default. If you want to use them, you need to set them in `config.toml`.

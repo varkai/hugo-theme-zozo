@@ -44,6 +44,14 @@ $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 
 关于页面就是这么实现的。
 
+## Shortcodes
+
+主题提供了 `img` shortcode.
+
+```markdown
+{{< img src="path/to/xxx.png" title="xxx" >}}
+```
+
 ## Math 公式
 
 本主题支持 MathJax 数学公式，默认为关闭状态，如需使用，需要在 [`config.toml`](./exampleSite/config.toml) 中进行设置。
