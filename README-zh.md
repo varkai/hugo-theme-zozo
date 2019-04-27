@@ -30,7 +30,7 @@ $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 
 ## 关于页面
 
-使用关于页面，首先要在你的站点目录的 [`content`](./exampleSite/content/) 目录下创建一个 [`about`](./exampleSite/content/about/) 目录，然后再创建一个 [`index.md`](./exampleSite/content/about/index.md) 文件，并在文件的 `frontmatter` 中添加  `hidden: true`, 最后编写该文件即可。
+使用关于页面，首先要在你的站点目录的 [`content`](./exampleSite/content/) 目录下创建一个 [`about`](./exampleSite/content/about/) 目录，然后再创建一个 [`index.md`](./exampleSite/content/about/index.md) 文件，最后编写该文件即可。
 
 ## Logo
 
