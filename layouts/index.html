@@ -1,13 +1,15 @@
 {{ partial "head.html" . }}
+
 <body>
-<div class="main animated">
-  {{ partial "nav.html" . }}
-  {{ partial "header.html" . }}
-  <div class="content">
-    {{ partial "post.html" .}}
-  </div>
-</div>
-{{ partial "footer.html" . }}
-{{ partial "js.html" . }}
+    <div class="main animate__animated animate__fadeInDown">
+        {{ partial "nav.html" . }}
+        {{ partial "header.html" . }}
+        <div class="content">
+            {{ partial "post.html" .}}
+        </div>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "js.html" . }}
 </body>
+
 </html>

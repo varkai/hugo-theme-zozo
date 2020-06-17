@@ -1,10 +1,10 @@
 # Hugo Theme Zozo
 
-[![GitHub](https://img.shields.io/github/license/imzeuk/hugo-theme-zozo.svg?color=4664DA&style=flat-square)](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/imzeuk/hugo-theme-zozo.svg?color=4664DA&style=flat-square)](https://github.com/varkai/hugo-theme-zozo/blob/master/LICENSE)
 
 > 该主题移植自 [Aragaki](https://github.com/PCDotFan/Aragaki)，结构样式参考自 [菩提树下](https://blog.caicai.me/)，部分功能参考自 [Even](https://github.com/olOwOlo/hugo-theme-even)
 
-**在线预览**：[Demo](https://demo.zeuk.me)
+**在线预览**：[Demo](https://zozo.varkai.com)
 
 ## 截图
 
@@ -15,7 +15,7 @@
 首先进入 hugo 的站点目录运行下面的命令：
 
 ```bash
-$ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
+$ git clone https://github.com/varkai/hugo-theme-zozo themes/zozo
 ```
 
 本主题提供了一个示例配置文件是 [`exampleSite`](./exampleSite) 目录里的 [`config.toml`](./exampleSite/config.toml) 文件。
@@ -47,7 +47,7 @@ $ git clone https://github.com/imzeuk/hugo-theme-zozo themes/zozo
 主题提供了 `img` shortcode.
 
 ```markdown
-{{< img src="path/to/xxx.png" title="xxx" >}}
+{{< img src="path/to/xxx.png" >}}
 ```
 
 ## Math 公式
@@ -79,7 +79,7 @@ $ hugo server
 
 ## License
 
-Released under the [MIT](https://github.com/imzeuk/hugo-theme-zozo/blob/master/LICENSE) License.
+Released under the [MIT](https://github.com/varkai/hugo-theme-zozo/blob/master/LICENSE) License.
 
 ## 致谢
 

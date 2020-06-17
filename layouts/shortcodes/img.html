@@ -1,7 +1,7 @@
 {{ $path := .Get "src" }}
 {{ $caption := .Get "title" }}
 <div class="fancybox">
-  <a data-fancybox="gallery" href="{{ $path | absURL }}" data-caption="{{ $caption }}">
-    <img src="{{ $path | absURL }}" />
-  </a>
+    <a data-fancybox="gallery" href="{{ $path | absURL }}" data-caption="{{ $caption }}">
+        <img src="{{ $path | absURL }}" />
+    </a>
 </div>

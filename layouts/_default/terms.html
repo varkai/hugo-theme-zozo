@@ -1,28 +1,30 @@
 {{ partial "head.html" . }}
+
 <body>
-<div class="main animated">
-  {{ partial "nav.html" . }}
-  {{ partial "header.html" . }}
-  <div class="content">
-    <div class="page_tags">
-      <ul>
-        {{ $data := .Data }}
-        {{ range $key, $value := .Data.Terms.ByCount }}
-        {{ if ($value.Name) }}
-        <li>
-          <a href="{{ $data.Plural | absURL }}/{{ $value.Name | urlize }}">
-            {{ $value.Name }} <span class="terms_count">{{ $value.Count }}</span>
-          </a>
-        </li>
-        {{ end }}
-        {{ end }}
-      </ul>
+    <div class="main animate__animated animate__fadeInDown">
+        {{ partial "nav.html" . }}
+        {{ partial "header.html" . }}
+        <div class="content">
+            <div class="page_tags">
+                <ul>
+                    {{ $data := .Data }}
+                    {{ range $key, $value := .Data.Terms.ByCount }}
+                    {{ if ($value.Name) }}
+                    <li>
+                        <a href="{{ $data.Plural | absURL }}/{{ $value.Name | urlize }}">
+                            {{ $value.Name }} <span class="terms_count">{{ $value.Count }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
     </div>
-    <div class="pagination"></div>
-  </div>
-  <a id="back_to_top" href="#" class="back_to_top"><span>△</span></a>
-</div>
-{{ partial "footer.html" . }}
-{{ partial "js.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "js.html" . }}
 </body>
+
 </html>

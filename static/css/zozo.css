@@ -5,9 +5,25 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+html::-webkit-scrollbar {
+  width: 13px;
+}
+
+html::-webkit-scrollbar-button {
+  display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+  min-height: 16px;
+  background-color: #999999;
+  background-clip: padding-box;
+  border: 3px solid #fdfdfd;
+  border-radius: 5px;
+}
+
 body {
   color: #333333;
-  font-family: 'source-han-sans-simplified-c', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   width: 100%;
   background-color: #f7f7f7;
@@ -79,6 +95,7 @@ hr {
 .nav_container .menu_icon {
   padding: 10px;
   float: right;
+  display: none;
 }
 
 .nav_container .menu_icon a {
@@ -189,10 +206,6 @@ hr {
   margin-top: 50px;
 }
 
-.post .post_title {
-  padding-bottom: 16px;
-}
-
 .post .post_title h2 {
   letter-spacing: 1px;
   font-size: 1.4rem;
@@ -206,7 +219,7 @@ hr {
   text-decoration: none;
   letter-spacing: 1px;
   color: #1f1f1f;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 28px;
 }
 
@@ -230,6 +243,7 @@ hr {
 
 .post .post_content {
   word-break: normal;
+  margin-top: 20px;
 }
 
 .post .post_content p {
@@ -248,7 +262,7 @@ hr {
 }
 
 .post .post_footer {
-  padding: 20px 0 40px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #f3f3f3;
 }
 
@@ -434,7 +448,7 @@ hr {
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  margin: 2.5em 0 1.3em 0;
+  margin: 20px 0 20px 0;
   color: #000000;
 }
 
@@ -456,16 +470,15 @@ hr {
 
 .markdown pre,
 .markdown code {
-  font-family: 'Roboto Mono', Menlo, Monaco, courier, monospace;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.9em;
-  background: #f8f8f8 !important;
+  background: #f8fafc;
   border: none;
+  white-space: pre;
 }
 
 .markdown pre {
-  margin-top: 1.2em;
-  margin-bottom: 2.2em;
-  padding: 15px 20px;
+  padding: 16px;
   display: block;
   overflow: auto;
   white-space: pre;
@@ -482,6 +495,7 @@ hr {
 .markdown pre code {
   padding: 0;
   color: #555555;
+  white-space: pre;
 }
 
 .markdown blockquote p {
@@ -553,6 +567,20 @@ hr {
   height: auto;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th {
+  background-color: #f6f8fa;
+}
+
+table th, table td {
+  padding: 10px 20px;
+  border: 1px solid #dfe2e5;
+}
+
 a.back_to_top {
   text-decoration: none;
   position: fixed;
@@ -611,6 +639,7 @@ a.back_to_top:hover span {
   .nav_container .menu_icon {
     position: fixed;
     right: 0;
+    display: block;
   }
   .back_to_top {
     display: none !important;
@@ -685,4 +714,3 @@ a.back_to_top:hover span {
 }
 
 /*animation ends*/
-/*# sourceMappingURL=zozo.css.map */

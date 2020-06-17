@@ -36,3 +36,20 @@ $(document).ready((function (_this) {
     })
   }
 })(this))
+
+// FancyBox
+$('[data-fancybox="gallery"]').fancybox({
+  arrows: false,
+  infobar: false,
+  buttons: [],
+  clickContent: "close",
+  autoFocus: false,
+  backFocus: false,
+  wheel: false,
+  mobile: {
+    clickContent: "close",
+    clickSlide: "close",
+    dblclickContent: false,
+    dblclickSlide: false
+  },
+});

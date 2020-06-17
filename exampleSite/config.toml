@@ -1,22 +1,26 @@
-baseURL = "https://example.com"
+baseURL = "http://localhost:1313/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
-title = "无尽光芒"                    # site title  # 网站标题
+title = "无尽光芒"                      # site title  # 网站标题
 theme = "zozo"
-hasCJKLanguage = true                # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
+hasCJKLanguage = true                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
 summaryLength = 100
-paginate = 4                         # shows the number of articles  # 首页显示文章数量
+paginate = 4                           # shows the number of articles  # 首页显示文章数量
 enableEmoji = true
-googleAnalytics = ""                 # your google analytics id
-disqusShortname = ""                 # your discuss shortname
+googleAnalytics = ""                   # your google analytics id
+disqusShortname = ""                   # your discuss shortname
 
-[author]                             # essential                     # 必需
-  name = "Zeuk"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+pygmentscodefencesguesssyntax = true
+
+[author]                               # essential                     # 必需
+  name = "VarKai"
 
 [blackfriday]
   smartypants = false
 
-[[menu.main]]                        # config your menu  # 配置菜单
+[[menu.main]]                          # config your menu  # 配置菜单
   name = "首页"
   weight = 10
   identifier = "home"
@@ -39,13 +43,10 @@ disqusShortname = ""                 # your discuss shortname
 
 [params]
   subTitle = "the site subtitle"                                       # site's subTitle  # 网站二级标题
-  footerSlogan = "我的精神家园"                                          # site's footer slogan  # 网站页脚标语
+  footerSlogan = "我的精神家园"                                         # site's footer slogan  # 网站页脚标语
   keywords = ["Hugo", "theme","zozo"]                                  # site's keywords  # 网站关键字
   description = "Hugo theme zozo example site."                        # site's description  # 网站描述
-
-# mathjax
   enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
-
   enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
   
 # Valine.
@@ -58,9 +59,15 @@ disqusShortname = ""                 # your discuss shortname
   placeholder = " "
   visitor = true
 
+# Your socail's url
 [social]
   github = " "
   twitter = " "
   facebook = " "
   weibo = " "
   instagram = " "
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
