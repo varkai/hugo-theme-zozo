@@ -32,10 +32,6 @@ $ git clone https://github.com/varkai/hugo-theme-zozo themes/zozo
 
 使用关于页面，首先要在你的站点目录的 [`content`](./exampleSite/content/) 目录下创建一个 [`about`](./exampleSite/content/about/) 目录，然后再创建一个 [`index.md`](./exampleSite/content/about/index.md) 文件，最后编写该文件即可。
 
-## Logo
-
-你需要将 [`images`](./static/images/) 目录下的 `logo.svg`、`favicon.ico` 都替换为你自己的图像。
-
 ## 隐藏页面
 
 如果你不想让一个页面出现在文章列表中，只需要在 markdown 文件的 `frontmatter` 中添加 `hidden: true` 即可。

@@ -8,7 +8,7 @@
             <div class="page_tags">
                 <h1>(≥o≤)</h1>
                 <h2>{{ with .Site.Params.title404 }}{{ . }}{{ else }}404 Page Not Found{{ end }}</h2>
-                <h3><a href="{{ "/" | absURL }}">首页</a></h3>
+                <h3><a href="{{ .Site.BaseURL }}">首页</a></h3>
             </div>
             <div class="pagination"></div>
         </div>

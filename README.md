@@ -40,10 +40,6 @@ There is an example site with config file and markdown files in `exampleSite` di
 
 Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/index.md`.
 
-## Logo
-
-In order to customize the logo and favicon, you need to place all the following files in the static folder at the root of your site, which will overwrite those files in the `themes/zozo/static/images/` folder.
-
 ## Hide Pages
 
 Pages can be hidden and don't appear in the post list on the homepage if you add the variable `hidden = true` to the frontmatter. This allows you to link from elsewhere, i.e. just the menu.
