@@ -44,11 +44,11 @@ pygmentscodefencesguesssyntax = true
 [params]
   subTitle = "the site subtitle"                                       # site's subTitle  # 网站二级标题
   footerSlogan = "My spiritual home"                                   # site's footer slogan  # 网站页脚标语
-  keywords = ["Hugo", "theme","zozo"]                                  # site's keywords  # 网站关键字
+  keywords = ["Hugo","theme","zozo"]                                  # site's keywords  # 网站关键字
   description = "Hugo theme zozo example site."                        # site's description  # 网站描述
   enableMathJax = true                                                 # enable mathjax  # 是否使用mathjax（数学公式）
   enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
-  mainSections = ["posts"]
+  mainSections = ["posts","post"]
   
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
