@@ -1,44 +1,46 @@
 {{ partial "head.html" . }}
 
 <body>
-    <div class="main animate__animated animate__fadeInDown">
-        {{ partial "nav.html" . }}
-        {{ partial "header.html" . }}
-        <div class="content">
-            <div class="post_page">
-                <div class="post animate__animated animate__fadeInDown">
-                    <div class="post_title post_detail_title">
-                        <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
-                        <span class="date">{{ .Date.Format "2006.01.02" }}</span>
-                    </div>
-                    <div class="post_content markdown">{{ .Content }}</div>
-                    <div class="post_footer">
-                        {{ with .Params.tags }}
-                        <div class="meta">
-                            <div class="info">
-                                <span class="field tags">
-                                    <i class="ri-stack-line"></i>
-                                    {{ range . }}
-                                    <a href="{{ "tags" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
-                                    {{ end }}
-                                </span>
-                            </div>
-                        </div>
-                        {{ end }}
-                    </div>
-                </div>
-                <!-- 评论系统 -->
-                {{ if .Site.Params.valine.enable }}
-                {{ partial "comments.html" . }}
-                {{ else }}
-                <div class="doc_comments">{{ template "_internal/disqus.html" . }}</div>
-                {{ end }}
+  <div class="main animate__animated animate__fadeInDown">
+    {{ partial "nav.html" . }}
+    {{ partial "header.html" . }}
+    <div class="content">
+      <div class="post_page">
+        <div class="post animate__animated animate__fadeInDown">
+          <div class="post_title post_detail_title">
+            <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
+            <span class="date">Posted on {{ .Date.Format "January 2, 2006" }}</span>
+            <br />
+            <span class="date">{{ i18n "postReadingTime" .ReadingTime }}</span>
+          </div>
+          <div class="post_content markdown">{{ .Content }}</div>
+          <div class="post_footer">
+            {{ with .Params.tags }}
+            <div class="meta">
+              <div class="info">
+                <span class="field tags">
+                  <i class="ri-stack-line"></i>
+                  {{ range . }}
+                  <a href="{{ "tags" | absURL }}/{{ . | urlize }}/">{{ . }}</a>
+                  {{ end }}
+                </span>
+              </div>
             </div>
+            {{ end }}
+          </div>
         </div>
+        <!-- 评论系统 -->
+        {{ if .Site.Params.valine.enable }}
+        {{ partial "comments.html" . }}
+        {{ else }}
+        <div class="doc_comments">{{ template "_internal/disqus.html" . }}</div>
+        {{ end }}
+      </div>
     </div>
-    <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
-    {{ partial "footer.html" . }}
-    {{ partial "js.html" . }}
+  </div>
+  <a id="back_to_top" href="#" class="back_to_top"><i class="ri-arrow-up-s-line"></i></a>
+  {{ partial "footer.html" . }}
+  {{ partial "js.html" . }}
 </body>
 
 </html>

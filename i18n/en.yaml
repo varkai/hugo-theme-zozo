@@ -15,3 +15,7 @@ tags:
 
 about:
   other: "About"
+
+postReadingTime:
+  one: "1 minute read"
+  other: "{{ .Count }} minute read"
