@@ -10,8 +10,10 @@
           <div class="post_title post_detail_title">
             <h2><a href='{{ .RelPermalink }}'>{{ .Title }}</a></h2>
             <span class="date">Posted on {{ .Date.Format "January 2, 2006" }}</span>
+            {{ if .Site.Params.readingTime }}
             <br />
             <span class="date">{{ i18n "postReadingTime" .ReadingTime }}</span>
+            {{ end }}
           </div>
           <div class="post_content markdown">{{ .Content }}</div>
           <div class="post_footer">

@@ -15,3 +15,7 @@ tags:
 
 about:
   other: "关于"
+
+postReadingTime:
+  one: "1分钟阅读"
+  other: "{{ .Count }} 分钟阅读"
