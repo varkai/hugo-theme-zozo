@@ -249,6 +249,7 @@ hr {
 .post .post_content p {
   line-height: 2em;
   letter-spacing: 0.2px;
+  margin-bottom: 20px;
 }
 
 .post .post_content a {
