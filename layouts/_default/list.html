@@ -10,12 +10,14 @@
                 <div class="listing_title">{{ .Key }}</div>
                 <div class="listing">
                     {{ range .Pages }}
+                    {{ if not .Draft }}
                     <div class="listing_item">
                         <div class="listing_post">
                             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                             <div class="post_time"><span class="date">{{ .Date.Format "01-02" }}</span></div>
                         </div>
                     </div>
+                    {{ end }}
                     {{ end }}
                 </div>
                 {{ end }}
