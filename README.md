@@ -78,6 +78,13 @@ Now enter `localhost:1313` in the address bar of your browser.
 
 ## License
 
+## forms
+
+
+[add a contact form and publish to github pages]
+](https://fabform.io/a/create-a-static-website-with-contact-form-on-github-pages)
+
+
 Released under the [MIT](https://github.com/varkai/hugo-theme-zozo/blob/master/LICENSE) License.
 
 ## Acknowledgements
